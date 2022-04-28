@@ -14,7 +14,7 @@ const Orders = () => {
     useEffect(() => {
         const getOrders = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/order?email=${user.email}`, {
+                const res = await axios.get(`https://agile-harbor-64341.herokuapp.com/order?email=${user.email}`, {
                     headers: {
                         authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }

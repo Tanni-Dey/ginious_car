@@ -21,7 +21,7 @@ const Checkout = () => {
             address: event.target.address.value,
             phone: event.target.phone.value
         }
-        axios.post('http://localhost:5000/order', order)
+        axios.post('https://agile-harbor-64341.herokuapp.com/order', order)
             .then(res => {
                 console.log(res)
                 const { data } = res;
